@@ -28,8 +28,8 @@ def _(x):
 PYTHON_VER = ".".join(platform.python_version_tuple()[0:2])
 
 QT_PREFIX = "usr"
-if os.path.exists("/usr/qt/4/lib/libQtCore.so"):
-    QT_PREFIX += "/qt/4"
+if os.path.exists("/usr/lib/qt5/libQtCore.so"):
+    QT_PREFIX += "/lib/qt5"
 
 default_live_exclude_list = """
 lib/rcscripts/
@@ -64,17 +64,17 @@ usr/lib/python%s/idlelib/
 usr/lib/python%s/bsddb/test/
 usr/lib/python%s/lib-old/
 usr/lib/python%s/test/
-usr/lib/python%s/site-packages/PyQt4/QtAssistant.so
-usr/lib/python%s/site-packages/PyQt4/QtDesigner.so
-usr/lib/python%s/site-packages/PyQt4/QtHelp.so
-usr/lib/python%s/site-packages/PyQt4/QtNetwork.so
-usr/lib/python%s/site-packages/PyQt4/QtOpenGL.so
-usr/lib/python%s/site-packages/PyQt4/QtScript.so
-usr/lib/python%s/site-packages/PyQt4/QtSql.so
-usr/lib/python%s/site-packages/PyQt4/QtTest.so
-usr/lib/python%s/site-packages/PyQt4/QtWebKit.so
-usr/lib/python%s/site-packages/PyQt4/QtXml.so
-usr/lib/python%s/site-packages/PyQt4/QtXmlPatterns.so
+usr/lib/python%s/site-packages/PyQt5/QtAssistant.so
+usr/lib/python%s/site-packages/PyQt5/QtDesigner.so
+usr/lib/python%s/site-packages/PyQt5/QtHelp.so
+usr/lib/python%s/site-packages/PyQt5/QtNetwork.so
+usr/lib/python%s/site-packages/PyQt5/QtOpenGL.so
+usr/lib/python%s/site-packages/PyQt5/QtScript.so
+usr/lib/python%s/site-packages/PyQt5/QtSql.so
+usr/lib/python%s/site-packages/PyQt5/QtTest.so
+usr/lib/python%s/site-packages/PyQt5/QtWebKit.so
+usr/lib/python%s/site-packages/PyQt5/QtXml.so
+usr/lib/python%s/site-packages/PyQt5/QtXmlPatterns.so
 usr/lib/klibc/include/
 usr/lib/syslinux/
 usr/share/aclocal/
